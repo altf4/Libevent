@@ -60,10 +60,13 @@ extern "C" {
 #define ev_arg ev_evcallback.evcb_arg
 
 /* Possible values for evcb_closure in struct event_callback */
+/* DOCUMENT these. */
 #define EV_CLOSURE_EVENT 0
 #define EV_CLOSURE_EVENT_SIGNAL 1
 #define EV_CLOSURE_EVENT_PERSIST 2
 #define EV_CLOSURE_CB_SELF 3
+#define EV_CLOSURE_EVENT_FINALIZE 4
+#define EV_CLOSURE_CB_FINALIZE 5
 
 /** Structure to define the backend of a given event_base. */
 struct eventop {

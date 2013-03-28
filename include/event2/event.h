@@ -829,7 +829,9 @@ int event_base_got_break(struct event_base *);
  */
 #define EV_PERSIST	0x10
 /** Select edge-triggered behavior, if supported by the backend. */
-#define EV_ET       0x20
+#define EV_ET		0x20
+/** DOCUMENT */
+#define EV_FINALIZED    0x40
 /**@}*/
 
 /**
